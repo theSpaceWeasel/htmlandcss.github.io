@@ -1,0 +1,501 @@
+* , ::after, ::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: content-box;
+   scroll-behavior: smooth;
+}
+
+   div.info-wrapper {
+    
+    display: flex;
+    flex-direction: column;
+    height: 7em;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+   } 
+
+   div.header{
+      display: flex;
+      background-color: #f0b9b2;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 50%;
+     
+   }
+
+.info-header{
+   font-size: 16px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: white;
+
+
+}
+
+
+div.info {
+   padding: 3px;
+   position: relative;
+    background-color: #f0b2b2af;
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+a {
+   text-decoration: none;
+   padding: 5px;
+   margin: 5px;
+   text-transform: lowercase;
+   color:white;
+   font-size: 0.7em;
+}
+
+.navbar-wrap{
+   position: relative;
+   display:flex;
+   width: 100%;
+   height: 5em;
+  
+}
+
+
+a#nav-button {
+   color: black ;
+}
+
+.logo {
+   height: 5em;
+   width: 100px;
+}
+
+.nav-menu{
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   transition: all 1s ease;
+   list-style: none;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+   margin: 3px;
+   top: -25%;
+ 
+
+}
+
+nav ul li {
+   list-style: none;
+}
+
+.btn-burger{
+ position: absolute;
+ right: 0;
+transition: all 1s ease;
+width: 80px;
+height: 80px;
+cursor: pointer;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.burger{
+   display: block;
+   width: 50px;
+   height: 6px;
+   background: black;
+   border-radius: 5px;
+   transition: all 1s ease;   
+   
+}
+
+.burger::before, .burger::after{
+   content: '';
+   position: absolute;
+   width: 50px;
+   height: 6px;
+   background: black;
+   border-radius: 5px;
+   transition: all 1s ease;
+
+}
+
+.burger::before{
+transform: translateY(-16px);
+}
+
+.burger::after{
+   transform: translateY(16px);
+}
+
+.btn-burger.open .burger{
+   transform: translateX(-50px);
+   background: transparent;
+}
+
+.btn-burger.open .burger::before{
+transform: rotate(45deg) translate(35px, -35px);
+}
+
+ .btn-burger.open .burger::after{
+      transform: rotate(-45deg) translate(35px, 35px);
+   }
+
+.nav-menu.open{
+   top: 14em;
+   border: 2PX solid black;
+   background: white;
+   color: #000000;
+   top: 109PX;
+}
+
+div.nav-btn i{
+   border: 1px solid black;
+}
+
+
+
+.hero{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   padding-bottom: 1em;
+}
+
+.img1{  
+   width: 90vw;
+   object-fit: contain;
+   margin-bottom: 2em;
+}
+
+.hero-header{
+   margin-bottom: 1em;
+   font-weight: 800;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span{
+   display: block;
+   font-style: italic;
+   font-weight: 400;
+}
+
+p{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.hero-btn{
+   margin: 2em;
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px 10px 0 10px;
+   background-color: #221d48;
+   padding: 8px;
+   transition: 1s all ease;
+
+}
+
+.hero-btn:hover{
+   background-color: #f0b9b2;
+}
+
+#nav-link{  
+   text-transform: capitalize;
+   font-size: 15px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   letter-spacing: 1px;
+}
+
+#hero-btn-icon{
+   border-radius: 10px 10px 0 10px;
+   font-size: 20PX;
+   height: 100%;
+   padding: 6px;
+   margin-right: 5px;
+   color: azure;
+   background-color: #f0b9b2;
+   cursor: pointer;
+   transition: 1s all ease;
+}
+ 
+
+
+.section-two{
+   display: flex;
+   flex-direction: column;
+   margin: 0 35px 0 35px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sectwo-hdr2{
+   font-size: 22px;
+   background-image: url('images/lovepik-the-background-map-of-the-banner-posters-of-the-image_500851573.jpg');
+   vertical-align: middle;
+   padding: 20px;
+   text-align: center;
+   letter-spacing: 1px;
+   margin-top: 30px;
+   margin-bottom: 15px;
+}
+
+p{
+   line-height: 1.6;}
+
+.sectwo-btn{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 50px;
+   padding: 30PX 0 30PX 0;
+   -webkit-box-shadow: -2px 3px 25px -7px #000000; 
+   box-shadow: -2px 3px 25px -7px #000000;
+   cursor: pointer;
+}   
+
+#plus-btn{
+   color: antiquewhite;
+   font-size: 50px;
+   padding: 8px;
+   border-radius: 15px;
+   background-color: #f0b9b2;
+   margin-bottom: 5px;
+}
+
+#svrpls{
+   font-size: 20px;
+   text-transform: capitalize;
+   color: #000000;
+   font-weight: 700;
+   transition: 1s all ease;
+}
+
+#spanline{
+   color: black;
+}
+
+#svrpls:hover{
+   color: #f0b9b2;
+}
+
+#img1{
+   border-radius: 30PX 0 0 0;
+   margin-top: 50px;
+}
+
+.tgl-sct{
+   background-color: #f9f9f9;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   margin: 30px;
+}
+
+.tgl-btns{
+   background-color: #FFFFFF;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 10px;
+   width: 70%;
+   border-radius: 10px;
+   position: relative;
+   height: 5em;
+   cursor: pointer;
+   -webkit-box-shadow: 3px 2px 8px -1px rgba(0,0,0,0.75);
+   -moz-box-shadow: 3px 2px 8px -1px rgba(0,0,0,0.75);
+   box-shadow: 3px 2px 8px -1px rgba(0,0,0,0.75);
+
+}
+
+.tgl-ic{
+   background-color: #221d48;
+   position: absolute;
+   left: 20px;
+   color: beige;
+   font-size: 1.5em;
+   padding: 0.6em;
+   border-radius: 10px;
+   
+}
+
+
+#img2{
+   border-radius: 30PX 0 0 0;
+   margin-top: 50px;
+   border-radius: 62% 38% 53% 47% / 48% 59% 41% 52%;
+}
+
+.img2{  
+   width: 90vw;
+   object-fit: contain;
+   margin-bottom: 2em;
+}
+
+.sectwo-hdr3{
+   font-size: 22px;
+   background-image: url('images/blank.jpg');
+   vertical-align: middle;
+   padding: 15px;
+   text-align: center;
+   letter-spacing: 1px;
+   margin-top: 30px;
+   margin-bottom: 15px;
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.tgl-contents{
+   display: flex;
+    flex-direction: column;
+    margin: 0 35px 0 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.pgf{
+   text-align: left;
+   line-height: 2;
+}
+
+.default-btn{
+   margin: 2em;
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   border-radius: 10px 10px 0 10px;
+   background-color: #221d48;
+   padding: 8px;
+   transition: 1s all ease;
+
+}
+
+.cards {
+   padding: 20px;
+   margin: 20px;
+}
+.card{
+   background-color: #f0b9b2;
+   border-radius: 30px 30px 0 30px;
+
+   padding: 20px;
+   margin: 20px;
+}
+
+.annonce{
+   background-color: #FFFFFF;
+   border-radius: 30px 30px 0 30px;
+   margin-bottom: 20px;
+   PADDING: 30PX 0PX 20PX 21PX;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+
+#card-icn{
+   margin-left: 10px;
+   margin-right: 10px;
+   color: #221d48;
+   font-size: 30px;
+
+   
+
+}
+
+.card-headings{
+   margin-left: 10px;
+
+}
+
+.card-list{
+   line-height: 35px;
+   margin-bottom: 20px;
+   font-size: 1.1em;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   padding: 30PX;
+   
+}
+
+.card-btn{
+   font-size: 2em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px 10px 0 10px;
+   background-color: #221d48;
+   padding: 10px;
+   transition: 1s all ease;
+}
+
+
+.footer{
+   background-color: #000000;
+   color: #f9f9f9;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   PADDING: 60PX 0PX 60PX 0PX;
+}
+
+.footer-info{
+   display: flex;
+
+}
+
+.footer-list1{
+   MARGIN: 0PX 10PX 0PX 0PX;
+}
+
+.footer-list2{
+   MARGIN: 0PX 30PX 0PX 0PX;
+}
+
+.footer-list3{
+   MARGIN: 0PX 10PX 0PX 10PX;
+}
+
+
+
+.tgl-btns:hover {
+   color: red
+}
+.tgl-btns:hover .tgl-ic {
+   color: blue;
+}
+
+.footer-logo{
+   MARGIN-TOP: 75PX;
+   MARGIN-LEFT: -15PX;
+}
+.footer-headings{
+   
+   FONT-SIZE: 25PX;
+   color: #f0b9b2;
+   margin-bottom: 15PX;
+}
+
+.footer-list {
+   LINE-HEIGHT: 35PX;
+
+}
+
+ul li:hover{
+   color: #f0b9b2;
+}
